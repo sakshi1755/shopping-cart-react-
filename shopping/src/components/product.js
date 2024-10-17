@@ -7,9 +7,9 @@ export default function Product(props) {
     
     <button style={{margin: " 10px"}} type="button" className="btn btn-info">₹{props.individualproduct.price}</button>
     <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-  <button type="button" class="btn btn-danger">-</button>
+  <button type="button" class="btn btn-danger"onClick={()=> props.dq(props.index)}>-</button>
   <button type="button" class="btn btn-warning">{props.individualproduct.quantity}</button>
-  <button type="button" class="btn btn-success">+</button>
+  <button type="button" class="btn btn-success" onClick={()=> props.iq(props.index)}>+</button>
 </div>
     </div>
     
